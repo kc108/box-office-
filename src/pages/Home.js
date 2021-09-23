@@ -30,7 +30,7 @@ const Home = () => {
 
         apiGet(`/search/${searchOption}?q=${input}`).then(result => {
             setResults(result);
-            console.log(result);
+            // console.log(result);
         });
 
        //  https://api.tvmaze.com/search/shows?q=men
@@ -58,7 +58,7 @@ const Home = () => {
         setSearchOption(ev.target.value)
     };
 
-    console.log(searchOption)
+    // console.log(searchOption)
 
     const renderResults = () => {
 
