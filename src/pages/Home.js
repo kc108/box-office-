@@ -14,6 +14,17 @@ const Home = () => {
 
     const isShowsSearch = searchOption === 'shows';
 
+    // // CallBack function inside 'useEffect(() => {}, []);' will only run when something inside the Arr of Dependencies changes
+    // useEffect(() => {
+    //     console.log('use effect run');
+
+    //     // this will be run BEFORE the next CallBack function will be fired off
+    //     // if you do not put a parameter (e.g., [SearchOptions] or something else) it will only fire when you UNMOUNT (Switch pages or update etc. )
+    //     return() => {
+    //         console.log('exit')
+    //     }
+
+    // }, []);
 
     const onSearch = () => {
 
